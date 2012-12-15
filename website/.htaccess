@@ -1,0 +1,5 @@
+SetEnv REGISTER_GLOBALS 0
+SetEnv PHP_VER 5
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.newsleaks-game\.com [NC]
+RewriteRule (.*) http://www.newsleaks-game.com [QSA,R=301,L]
